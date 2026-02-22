@@ -1,0 +1,10 @@
+{
+  "name": "PokéPlay",
+  "short_name": "PokéPlay",
+  "description": "Browser-based Pokémon ROM hack platform with cloud saves and multiplayer",
+  "theme_color": "#cc0000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "start_url": "/dashboard",
+  "icons": []
+}

@@ -1,0 +1,33 @@
+# ROMs - NEVER commit these
+*.gb
+*.gbc
+*.gba
+*.gba
+*.nds
+*.zip
+roms/
+
+# Environment
+.env.local
+.env*.local
+
+# Next.js
+.next/
+out/
+node_modules/
+
+# EmulatorJS cores (large binary files)
+public/emulatorjs/data/cores/*.data
+
+# Testing
+coverage/
+test-results/
+playwright-report/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
