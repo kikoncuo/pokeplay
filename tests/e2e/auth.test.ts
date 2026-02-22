@@ -8,7 +8,7 @@
  * Live auth flows (network calls to Supabase) are tagged test.skip for CI.
  */
 
-import { test, expect } from '@playwright/test';
+import { test, expect, type Page } from '@playwright/test';
 
 // ---------------------------------------------------------------------------
 // Login page — static structure
@@ -131,7 +131,7 @@ test.describe('Register page — structure', () => {
 
 test.describe('Register page — client-side validation', () => {
   async function fillRegisterForm(
-    page: Parameters<Parameters<typeof test>[1]>[0],
+    page: Page,
     opts: { username?: string; email?: string; password?: string; confirm?: string },
   ) {
     await page.goto('/register');

@@ -54,7 +54,7 @@ export default function DashboardPage(): React.ReactElement {
 
         setRecentGames(
           data.map((row) => {
-            const game = row.games as { title: string | null; system: string | null } | null;
+            const game = row.games as unknown as { title: string | null; system: string | null } | null;
             return {
               gameHash: row.game_hash,
               lastPlayedAt: row.last_played_at as string,

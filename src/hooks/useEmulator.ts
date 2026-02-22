@@ -116,7 +116,7 @@ export function useEmulator(options: UseEmulatorOptions): UseEmulatorReturn {
 
   const saveState = useCallback(() => managerRef.current?.saveState(), []);
   const loadState = useCallback(
-    (state: ArrayBuffer) => managerRef.current?.loadState(state),
+    (state: ArrayBuffer | Uint8Array) => managerRef.current?.loadState(state as Uint8Array),
     [],
   );
   const pause = useCallback(() => managerRef.current?.pause(), []);
